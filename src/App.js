@@ -18,7 +18,6 @@ import {
 } from "@reach/combobox";
 
 import "@reach/combobox/styles.css";
-import mapStyles from "./mapStyles";
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -26,7 +25,6 @@ const mapContainerStyle = {
   width: "100vw",
 };
 const options = {
-  styles: mapStyles,
   disableDefaultUI: true,
   zoomControl: true,
 };
@@ -172,7 +170,7 @@ function Search({ panTo }) {
       const { lat, lng } = await getLatLng(results[0]);
       panTo({ lat, lng });
     } catch (error) {
-      console.log("😱 Error: ", error);
+      console.log("Error: ", error);
     }
   };
 

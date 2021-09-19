@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="620f695f-e3c3-4420-85e7-db4e22bcee4f" name="Changes" comment="imported map, embedded api key" />
+    <list default="true" id="620f695f-e3c3-4420-85e7-db4e22bcee4f" name="Changes" comment="imported map, embedded api key, updated readme">
+      <change afterPath="$PROJECT_DIR$/src/sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mapStyles.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +43,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.Run Project">
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -39,6 +53,17 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="Run Project" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="npm.Run Project" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -52,6 +77,8 @@
       <workItem from="1631601021907" duration="6433000" />
       <workItem from="1631682735831" duration="1203000" />
       <workItem from="1632027636808" duration="3328000" />
+      <workItem from="1632038896363" duration="1757000" />
+      <workItem from="1632040837314" duration="908000" />
     </task>
     <task id="LOCAL-00001" summary="copied source code from node-hello">
       <created>1631611715368</created>
@@ -60,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631611715368</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="imported map, embedded api key, updated readme">
+      <created>1632038996931</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1632038996931</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +116,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="copied source code from node-hello" />
     <MESSAGE value="imported map, embedded api key" />
-    <option name="LAST_COMMIT_MESSAGE" value="imported map, embedded api key" />
+    <MESSAGE value="imported map, embedded api key, updated readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="imported map, embedded api key, updated readme" />
   </component>
 </project>
