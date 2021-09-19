@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="620f695f-e3c3-4420-85e7-db4e22bcee4f" name="Changes" comment="copied source code from node-hello" />
+    <list default="true" id="620f695f-e3c3-4420-85e7-db4e22bcee4f" name="Changes" comment="imported map, embedded api key" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,6 +81,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="copied source code from node-hello" />
-    <option name="LAST_COMMIT_MESSAGE" value="copied source code from node-hello" />
+    <MESSAGE value="imported map, embedded api key" />
+    <option name="LAST_COMMIT_MESSAGE" value="imported map, embedded api key" />
   </component>
 </project>

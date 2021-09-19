@@ -16,7 +16,6 @@ import {
   ComboboxList,
   ComboboxOption,
 } from "@reach/combobox";
-import { formatRelative } from "date-fns";
 
 import "@reach/combobox/styles.css";
 import mapStyles from "./mapStyles";
@@ -32,13 +31,13 @@ const options = {
   zoomControl: true,
 };
 const center = {
-  lat: 43.6532,
-  lng: -79.3832,
+  lat: -37.7799973,
+  lng: 145.0016577,
 };
 
 export default function App() {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: "AIzaSyBT5BjqQdoLQwCM45USRSZl8YQHoMulOdI",
     libraries,
   });
   const [markers, setMarkers] = React.useState([]);
@@ -62,7 +61,7 @@ export default function App() {
 
   const panTo = React.useCallback(({ lat, lng }) => {
     mapRef.current.panTo({ lat, lng });
-    mapRef.current.setZoom(14);
+    mapRef.current.setZoom(11);
   }, []);
 
   if (loadError) return "Error";
@@ -71,10 +70,8 @@ export default function App() {
   return (
     <div>
       <h1>
-        Bears{" "}
-        <span role="img" aria-label="tent">
-          ⛺️
-        </span>
+        COVID Testing Sites{" "}
+
       </h1>
 
       <Locate panTo={panTo} />
@@ -83,7 +80,7 @@ export default function App() {
       <GoogleMap
         id="map"
         mapContainerStyle={mapContainerStyle}
-        zoom={8}
+        zoom={11}
         center={center}
         options={options}
         onClick={onMapClick}
@@ -97,7 +94,7 @@ export default function App() {
               setSelected(marker);
             }}
             icon={{
-              url: `/bear.svg`,
+              url: `/person.svg`,
               origin: new window.google.maps.Point(0, 0),
               anchor: new window.google.maps.Point(15, 15),
               scaledSize: new window.google.maps.Size(30, 30),
@@ -114,12 +111,9 @@ export default function App() {
           >
             <div>
               <h2>
-                <span role="img" aria-label="bear">
-                  🐻
-                </span>{" "}
-                Alert
+                Testing Site name
               </h2>
-              <p>Spotted {formatRelative(selected.time, new Date())}</p>
+              <p>Testing Site info</p>
             </div>
           </InfoWindow>
         ) : null}
@@ -158,7 +152,7 @@ function Search({ panTo }) {
     clearSuggestions,
   } = usePlacesAutocomplete({
     requestOptions: {
-      location: { lat: () => 43.6532, lng: () => -79.3832 },
+      location: { lat: () => 37.7799973, lng: () => 145.0016577 },
       radius: 100 * 1000,
     },
   });

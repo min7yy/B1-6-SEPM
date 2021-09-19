@@ -1,11 +1,20 @@
-# Google Maps in React Demo
+## Members
 
-This video covers a **Bear Sighting** React App where we learn how Google Maps, Google Places, and browser geolocation works. All using modern React (hooks) and up to date packages for 2020.
+- Lachlan Frater
+- Kimberley Tan
+- Bryant Ricardo
+- Patrick Soliman
+- Zhenxin Li
+- Domenico Mete
+
+## Running the Application
+ 
+ To run the application on your device, type "npm install" in the terminal after cloning the code,
+ after the project has imported the necessary files and dependencies, type "npm start" to run the project.
+
 
 ## Links
 
-- Source Code: https://github.com/leighhalliday/google-maps-react-2020
-- Video: https://youtu.be/WZcxJGmLbSo
 - Google Maps React: https://www.npmjs.com/package/@react-google-maps/api
 - Google Places React: https://www.npmjs.com/package/use-places-autocomplete
 - Reach Combobox: https://reacttraining.com/reach-ui/combobox/
@@ -14,8 +23,7 @@ This video covers a **Bear Sighting** React App where we learn how Google Maps, 
 
 ## API Keys
 
-For this demo to work, please create a Google Map API Key, and ensure that the two services below are enabled... otherwise it won't work! This API key must be in the environment variable `REACT_APP_GOOGLE_PLACES_API_KEY`.
+For this app to run properly, ensure that the two services below are enabled... otherwise it won't work!
 
-- Maps JavaScript API
 - Places API
 - Geocoding API
