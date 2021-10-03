@@ -18,12 +18,14 @@ import {
 } from "@reach/combobox";
 
 import "@reach/combobox/styles.css";
+import * as siteData from "./data/TestingSiteData.json";
 
 const libraries = ["places"];
 const mapContainerStyle = {
   height: "100vh",
   width: "100vw",
 };
+
 const options = {
   disableDefaultUI: true,
   zoomControl: true,
@@ -32,6 +34,7 @@ const center = {
   lat: -37.7799973,
   lng: 145.0016577,
 };
+
 
 export default function App() {
   const { isLoaded, loadError } = useLoadScript({
@@ -42,19 +45,34 @@ export default function App() {
   const [selected, setSelected] = React.useState(null);
 
   const onMapClick = React.useCallback((e) => {
-    setMarkers((current) => [
-      ...current,
-      {
-        lat: e.latLng.lat(),
-        lng: e.latLng.lng(),
-        time: new Date(),
-      },
-    ]);
+
   }, []);
 
   const mapRef = React.useRef();
   const onMapLoad = React.useCallback((map) => {
     mapRef.current = map;
+    siteData.sites.map(site => {
+      setMarkers((current) => [
+        ...current,
+        {
+          lat: parseFloat(site.Latitude),
+          lng: parseFloat(site.Longitude),
+          name: site.Site_Name,
+          phone: site.Phone,
+          state: site.State,
+          opening: site.Service_Availability,
+          suburb: site.Suburb,
+          address: site.Address,
+
+
+
+          time: new Date(),
+
+        },
+      ]);
+
+    })
+
   }, []);
 
   const panTo = React.useCallback(({ lat, lng }) => {
@@ -108,14 +126,15 @@ export default function App() {
             }}
           >
             <div>
-              <h2>
-                Testing Site name
-              </h2>
-              <p>Testing Site info</p>
+              <h2> Site Name: {selected.name} </h2>
+              <p> Site Phone: {selected.phone} </p>
+              <p> Site State: {selected.state} </p>
+              <p> Site Address: {selected.address} </p>
             </div>
           </InfoWindow>
         ) : null}
       </GoogleMap>
+
     </div>
   );
 }

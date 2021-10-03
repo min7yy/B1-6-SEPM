@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="620f695f-e3c3-4420-85e7-db4e22bcee4f" name="Changes" comment="imported map, embedded api key, updated readme">
-      <change afterPath="$PROJECT_DIR$/src/sidebar.js" afterDir="false" />
+    <list default="true" id="620f695f-e3c3-4420-85e7-db4e22bcee4f" name="Changes" comment="added json file with all testing site data">
+      <change afterPath="$PROJECT_DIR$/public/skateboarding.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Rhistory" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mapStyles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestingSitesData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/TestingSiteData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/index.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/App.test.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/App.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1y7MZ8vpeG14ej9TrmYKixsIwUp" />
   <component name="ProjectLevelVcsManager">
@@ -79,6 +85,7 @@
       <workItem from="1632027636808" duration="3328000" />
       <workItem from="1632038896363" duration="1757000" />
       <workItem from="1632040837314" duration="908000" />
+      <workItem from="1633251135948" duration="11333000" />
     </task>
     <task id="LOCAL-00001" summary="copied source code from node-hello">
       <created>1631611715368</created>

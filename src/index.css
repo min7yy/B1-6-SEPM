@@ -51,3 +51,10 @@ h1 {
   width: 30px;
   cursor: pointer;
 }
+.post {
+  text-align: right;
+}
+.mapSize {
+  width: 50vw;
+  height: 50vh;
+}
