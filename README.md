@@ -8,7 +8,7 @@
 - Domenico Mete
 
 ## Running the Application
- 
+
  To run the application on your device, type "npm install" in the terminal after cloning the code,
  after the project has imported the necessary files and dependencies, type "npm start" to run the project.
 
@@ -26,4 +26,4 @@
 For this app to run properly, ensure that the two services below are enabled... otherwise it won't work!
 
 - Places API
-- Geocoding API
+- Geocoding API.
