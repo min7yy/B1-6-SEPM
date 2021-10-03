@@ -63,7 +63,8 @@ export default function App() {
           opening: site.Service_Availability,
           suburb: site.Suburb,
           address: site.Address,
-
+          type: site.ServiceFormat,
+          agelimit: site.AgeLimit,
 
 
           time: new Date(),
@@ -77,7 +78,7 @@ export default function App() {
 
   const panTo = React.useCallback(({ lat, lng }) => {
     mapRef.current.panTo({ lat, lng });
-    mapRef.current.setZoom(11);
+    mapRef.current.setZoom(15);
   }, []);
 
   if (loadError) return "Error";
@@ -126,10 +127,12 @@ export default function App() {
             }}
           >
             <div>
-              <h2> Site Name: {selected.name} </h2>
+              <h2> {selected.name} </h2>
               <p> Site Phone: {selected.phone} </p>
               <p> Site State: {selected.state} </p>
               <p> Site Address: {selected.address} </p>
+              <p> Site Type: {selected.type} </p>
+              <p> Site Age Limit: {selected.agelimit} </p>
             </div>
           </InfoWindow>
         ) : null}

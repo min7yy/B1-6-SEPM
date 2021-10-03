@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="620f695f-e3c3-4420-85e7-db4e22bcee4f" name="Changes" comment="added json file with all testing site data">
-      <change afterPath="$PROJECT_DIR$/public/skateboarding.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.Rhistory" beforeDir="false" />
+    <list default="true" id="620f695f-e3c3-4420-85e7-db4e22bcee4f" name="Changes" comment="Added site data to map as markers, markers now display site data.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestingSitesData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/TestingSiteData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +81,7 @@
       <workItem from="1632027636808" duration="3328000" />
       <workItem from="1632038896363" duration="1757000" />
       <workItem from="1632040837314" duration="908000" />
-      <workItem from="1633251135948" duration="11333000" />
+      <workItem from="1633251135948" duration="12383000" />
     </task>
     <task id="LOCAL-00001" summary="copied source code from node-hello">
       <created>1631611715368</created>
@@ -101,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632038996931</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added site data to map as markers, markers now display site data.">
+      <created>1633267204632</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633267204632</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +127,7 @@
     <MESSAGE value="copied source code from node-hello" />
     <MESSAGE value="imported map, embedded api key" />
     <MESSAGE value="imported map, embedded api key, updated readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="imported map, embedded api key, updated readme" />
+    <MESSAGE value="Added site data to map as markers, markers now display site data." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added site data to map as markers, markers now display site data." />
   </component>
 </project>
