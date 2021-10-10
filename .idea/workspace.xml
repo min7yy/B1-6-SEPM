@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="620f695f-e3c3-4420-85e7-db4e22bcee4f" name="Changes" comment="Added site data to map as markers, markers now display site data.">
+    <list default="true" id="620f695f-e3c3-4420-85e7-db4e22bcee4f" name="Changes" comment="added testing folder">
+      <change afterPath="$PROJECT_DIR$/public/mapMarker.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/App.test.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +27,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/index.css" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/App.test.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/App.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/tests/App.test.mjs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1y7MZ8vpeG14ej9TrmYKixsIwUp" />
@@ -45,7 +50,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lachl\IdeaProjects\B1-6-SEPM\src\tests" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.Run Project">
+    <configuration name="App.test.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/__tests__/App.test.mjs" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -65,7 +78,13 @@
     <list>
       <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="npm.Run Project" />
+      <item itemvalue="Node.js.App.test.mjs" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.App.test.mjs" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -81,7 +100,6 @@
       <workItem from="1632027636808" duration="3328000" />
       <workItem from="1632038896363" duration="1757000" />
       <workItem from="1632040837314" duration="908000" />
-      <workItem from="1633251135948" duration="12383000" />
     </task>
     <task id="LOCAL-00001" summary="copied source code from node-hello">
       <created>1631611715368</created>
@@ -97,14 +115,7 @@
       <option name="project" value="LOCAL" />
       <updated>1632038996931</updated>
     </task>
-    <task id="LOCAL-00003" summary="Added site data to map as markers, markers now display site data.">
-      <created>1633267204632</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1633267204632</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +126,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -127,7 +150,6 @@
     <MESSAGE value="copied source code from node-hello" />
     <MESSAGE value="imported map, embedded api key" />
     <MESSAGE value="imported map, embedded api key, updated readme" />
-    <MESSAGE value="Added site data to map as markers, markers now display site data." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added site data to map as markers, markers now display site data." />
+    <option name="LAST_COMMIT_MESSAGE" value="imported map, embedded api key, updated readme" />
   </component>
 </project>

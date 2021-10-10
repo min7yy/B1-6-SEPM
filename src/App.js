@@ -59,12 +59,25 @@ export default function App() {
           lng: parseFloat(site.Longitude),
           name: site.Site_Name,
           phone: site.Phone,
-          state: site.State,
           opening: site.Service_Availability,
           suburb: site.Suburb,
           address: site.Address,
           type: site.ServiceFormat,
           agelimit: site.AgeLimit,
+          moStart: site.Mo_Start,
+          moEnd: site.Mo_End,
+          tuStart: site.Tu_Start,
+          tuEnd: site.Tu_End,
+          weStart: site.We_Start,
+          weEnd: site.We_End,
+          thStart: site.Th_Start,
+          thEnd: site.Th_End,
+          frStart: site.Fr_Start,
+          frEnd: site.Fr_End,
+          saStart: site.Sa_Start,
+          saEnd: site.Sa_End,
+          suStart: site.Su_Start,
+          suEnd: site.Su_End,
 
 
           time: new Date(),
@@ -85,7 +98,7 @@ export default function App() {
   if (!isLoaded) return "Loading...";
 
   return (
-    <div>
+    <div data-testid="app-1">
       <h1>
         COVID Testing Sites{" "}
 
@@ -111,7 +124,7 @@ export default function App() {
               setSelected(marker);
             }}
             icon={{
-              url: `/person.svg`,
+              url: `/mapMarker.svg`,
               origin: new window.google.maps.Point(0, 0),
               anchor: new window.google.maps.Point(15, 15),
               scaledSize: new window.google.maps.Size(30, 30),
@@ -129,10 +142,19 @@ export default function App() {
             <div>
               <h2> {selected.name} </h2>
               <p> Site Phone: {selected.phone} </p>
-              <p> Site State: {selected.state} </p>
               <p> Site Address: {selected.address} </p>
               <p> Site Type: {selected.type} </p>
               <p> Site Age Limit: {selected.agelimit} </p>
+                  <h3 align={"right"}> Opening hours </h3>
+               <ol align={"right"}> Mon: {selected.moStart} - {selected. moEnd} </ol>
+                <ol align={"right"}> Tue: {selected.tuStart} - {selected. tuEnd} </ol>
+                <ol align={"right"}> Wed: {selected.weStart} - {selected. weEnd} </ol>
+                <ol align={"right"}> Thu: {selected.thStart} - {selected. thEnd} </ol>
+                <ol align={"right"}> Fri: {selected.frStart} - {selected. frEnd} </ol>
+                <ol align={"right"}> Sat: {selected.saStart} - {selected. saEnd} </ol>
+               <ol align={"right"}> Sun: {selected.suStart} - {selected. suEnd} </ol>
+
+
             </div>
           </InfoWindow>
         ) : null}
