@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="620f695f-e3c3-4420-85e7-db4e22bcee4f" name="Changes" comment="added testing folder">
-      <change afterPath="$PROJECT_DIR$/public/mapMarker.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/App.test.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VerticalCarousel.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/chevronDown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/chevronUp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +29,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/index.css" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/App.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/tests/App.test.mjs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/__tests__/App.test.mjs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1y7MZ8vpeG14ej9TrmYKixsIwUp" />
   <component name="ProjectLevelVcsManager">
@@ -77,8 +81,8 @@
     </configuration>
     <list>
       <item itemvalue="Docker.Dockerfile" />
-      <item itemvalue="npm.Run Project" />
       <item itemvalue="Node.js.App.test.mjs" />
+      <item itemvalue="npm.Run Project" />
     </list>
     <recent_temporary>
       <list>

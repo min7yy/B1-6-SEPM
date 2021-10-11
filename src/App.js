@@ -19,6 +19,7 @@ import {
 
 import "@reach/combobox/styles.css";
 import * as siteData from "./data/TestingSiteData.json";
+import VerticalCarousel from "./VerticalCarousel";
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -146,20 +147,20 @@ export default function App() {
               <p> Site Type: {selected.type} </p>
               <p> Site Age Limit: {selected.agelimit} </p>
                   <h3 align={"right"}> Opening hours </h3>
-               <ol align={"right"}> Mon: {selected.moStart} - {selected. moEnd} </ol>
-                <ol align={"right"}> Tue: {selected.tuStart} - {selected. tuEnd} </ol>
-                <ol align={"right"}> Wed: {selected.weStart} - {selected. weEnd} </ol>
-                <ol align={"right"}> Thu: {selected.thStart} - {selected. thEnd} </ol>
-                <ol align={"right"}> Fri: {selected.frStart} - {selected. frEnd} </ol>
-                <ol align={"right"}> Sat: {selected.saStart} - {selected. saEnd} </ol>
-               <ol align={"right"}> Sun: {selected.suStart} - {selected. suEnd} </ol>
+               <ol align={"right"}> Mon: {selected.moStart} - {selected.moEnd} </ol>
+                <ol align={"right"}> Tue: {selected.tuStart} - {selected.tuEnd} </ol>
+                <ol align={"right"}> Wed: {selected.weStart} - {selected.weEnd} </ol>
+                <ol align={"right"}> Thu: {selected.thStart} - {selected.thEnd} </ol>
+                <ol align={"right"}> Fri: {selected.frStart} - {selected.frEnd} </ol>
+                <ol align={"right"}> Sat: {selected.saStart} - {selected.saEnd} </ol>
+               <ol align={"right"}> Sun: {selected.suStart} - {selected.suEnd} </ol>
 
 
             </div>
           </InfoWindow>
         ) : null}
       </GoogleMap>
-
+      <VerticalCarousel data={siteData.sites} leadingText="Site Name:" />
     </div>
   );
 }
