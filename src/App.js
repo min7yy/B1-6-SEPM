@@ -5,20 +5,10 @@ import {
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
-import usePlacesAutocomplete, {
-  getGeocode,
-  getLatLng,
-} from "use-places-autocomplete";
-import {
-  Combobox,
-  ComboboxInput,
-  ComboboxPopover,
-  ComboboxList,
-  ComboboxOption,
-} from "@reach/combobox";
 
 import "@reach/combobox/styles.css";
 import * as siteData from "./data/TestingSiteData.json";
+//All required site data is included in this json, excluding Royal Melbourne Hospital as it closed on the 27th of September and is no longer available.
 import VerticalCarousel from "./VerticalCarousel";
 
 const libraries = ["places"];
@@ -61,6 +51,7 @@ export default function App() {
           name: site.Site_Name,
           phone: site.Phone,
           opening: site.Service_Availability,
+          website: site.Website,
           suburb: site.Suburb,
           address: site.Address,
           type: site.ServiceFormat,
@@ -90,11 +81,6 @@ export default function App() {
 
   }, []);
 
-  const panTo = React.useCallback(({ lat, lng }) => {
-    mapRef.current.panTo({ lat, lng });
-    mapRef.current.setZoom(15);
-  }, []);
-
   if (loadError) return "Error";
   if (!isLoaded) return "Loading...";
 
@@ -105,8 +91,6 @@ export default function App() {
 
       </h1>
 
-      <Locate panTo={panTo} />
-      <Search panTo={panTo} />
 
       <GoogleMap
         id="map"
@@ -143,7 +127,9 @@ export default function App() {
             <div>
               <h2> {selected.name} </h2>
               <p> Site Phone: {selected.phone} </p>
+              <p> Site Suburb: {selected.suburb} </p>
               <p> Site Address: {selected.address} </p>
+              <p> Site Website: {selected.website} </p>
               <p> Site Type: {selected.type} </p>
               <p> Site Age Limit: {selected.agelimit} </p>
                   <h3 align={"right"}> Opening hours </h3>
@@ -161,82 +147,6 @@ export default function App() {
         ) : null}
       </GoogleMap>
       <VerticalCarousel data={siteData.sites} leadingText="Site Name:" />
-    </div>
-  );
-}
-
-function Locate({ panTo }) {
-  return (
-    <button
-      className="locate"
-      onClick={() => {
-        navigator.geolocation.getCurrentPosition(
-          (position) => {
-            panTo({
-              lat: position.coords.latitude,
-              lng: position.coords.longitude,
-            });
-          },
-          () => null
-        );
-      }}
-    >
-      <img src="/compass.svg" alt="compass" />
-    </button>
-  );
-}
-
-function Search({ panTo }) {
-  const {
-    ready,
-    value,
-    suggestions: { status, data },
-    setValue,
-    clearSuggestions,
-  } = usePlacesAutocomplete({
-    requestOptions: {
-      location: { lat: () => 37.7799973, lng: () => 145.0016577 },
-      radius: 100 * 1000,
-    },
-  });
-
-  // https://developers.google.com/maps/documentation/javascript/reference/places-autocomplete-service#AutocompletionRequest
-
-  const handleInput = (e) => {
-    setValue(e.target.value);
-  };
-
-  const handleSelect = async (address) => {
-    setValue(address, false);
-    clearSuggestions();
-
-    try {
-      const results = await getGeocode({ address });
-      const { lat, lng } = await getLatLng(results[0]);
-      panTo({ lat, lng });
-    } catch (error) {
-      console.log("Error: ", error);
-    }
-  };
-
-  return (
-    <div className="search">
-      <Combobox onSelect={handleSelect}>
-        <ComboboxInput
-          value={value}
-          onChange={handleInput}
-          disabled={!ready}
-          placeholder="Search your location"
-        />
-        <ComboboxPopover>
-          <ComboboxList>
-            {status === "OK" &&
-              data.map(({ id, description }) => (
-                <ComboboxOption key={id} value={description} />
-              ))}
-          </ComboboxList>
-        </ComboboxPopover>
-      </Combobox>
     </div>
   );
 }

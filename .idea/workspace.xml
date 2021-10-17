@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="620f695f-e3c3-4420-85e7-db4e22bcee4f" name="Changes" comment="added testing folder">
-      <change afterPath="$PROJECT_DIR$/src/VerticalCarousel.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/chevronDown.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/chevronUp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VerticalCarousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/VerticalCarousel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/TestingSiteData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/TestingSiteData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,15 +22,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/index.css" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/App.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/__tests__/App.test.mjs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1y7MZ8vpeG14ej9TrmYKixsIwUp" />
   <component name="ProjectLevelVcsManager">
@@ -104,6 +99,8 @@
       <workItem from="1632027636808" duration="3328000" />
       <workItem from="1632038896363" duration="1757000" />
       <workItem from="1632040837314" duration="908000" />
+      <workItem from="1634388427068" duration="592000" />
+      <workItem from="1634466584233" duration="3338000" />
     </task>
     <task id="LOCAL-00001" summary="copied source code from node-hello">
       <created>1631611715368</created>

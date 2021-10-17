@@ -17,7 +17,7 @@ const VerticalCarousel = ({ data, leadingText }) => {
     const halfwayIndex = Math.ceil(data.length / 2);
 
     // Usd to determine the height/spacing of each item
-    const itemHeight = 85;
+    const itemHeight = 150;
 
     // Used to determine at what point an item is moved from the top to the bottom
     const shuffleThreshold = halfwayIndex * itemHeight;
@@ -119,6 +119,8 @@ const VerticalCarousel = ({ data, leadingText }) => {
                         <ul>Phone: {data[activeIndex].Phone}</ul>
                         <ul>Type: {data[activeIndex].ServiceFormat}</ul>
                         <ul>Address: {data[activeIndex].Address}</ul>
+                        <ul>Age Limit: {data[activeIndex].AgeLimit}</ul>
+
 
                     <h5>Opening hours: </h5>
                     <ol>Mon: {data[activeIndex].Mo_Start} - {data[activeIndex].Mo_End}</ol>
